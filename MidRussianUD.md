@@ -26,7 +26,10 @@ Created: 17 Feb 2019
 
 ## Grammatical features (FEAT)
 
-Status * means that the category/value occurs in a part of the word paradigm, ** - that it applies to a particular lexical class
+Status: 
+- * the category/value occurs in a part of the word paradigm,  
+- ** the category/value applies to a particular lexical class  
+- *** not included in UD 2.0 standard
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
 |---|---|---|---|---|---|---|---|
@@ -124,6 +127,7 @@ Status * means that the category/value occurs in a part of the word paradigm, **
 |PRON| Person=1 | | лицо: 1-е | person: 1st | | | 1p |
 |PRON| Person=2 | | лицо: 2-е | person: 2nd | | | 2p |
 |PRON| Person=3 | | лицо: 3-е | person: 3rd | | | 3p |
+|PRON| Reflex=Yes | ** | возвратное | reflexive | | | (reflex) |
 |PRON| _ | ** | нет помет | indeclinable | | | -- |
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
@@ -174,6 +178,8 @@ Status * means that the category/value occurs in a part of the word paradigm, **
 |VERB| Tense=Past | * | время: прошедшее | tense: past | | | praet,past |
 |AUX| Tense=Pqp | * | время: плюсквамперфект | tense: pluperfect | | | pqperf |
 |VERB| Tense=Pres | * | время: настоящее | tense: present | | | praes |
+|VERB| Transit=Intr | *** | непереходный | intransitive | | | intr |
+|VERB| Transit=Tran | *** | переходный | transitive | | | tran |
 |VERB| Variant=Long | * | полное окончание | long ending | | | plen |
 |VERB| Variant=Short | * | краткое окончание | short ending | | | brev |
 |VERB| VerbForm=Conv | | деепричастие | converb, gerundive | | | ger |
