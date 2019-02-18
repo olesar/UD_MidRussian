@@ -171,6 +171,7 @@ NB in UD standard, одинъ is cosidered a numeral and is labeled with Number.
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
 |---|---|---|---|---|---|---|---|
 |PART| Polarity=Neg | ** | отрицательное | negative polarity | | _не_, _нѣ_, _ни_ | -- |
+|PART| _ |  | нет помет | no tags | | _да_ | -- |
 
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
@@ -227,6 +228,11 @@ Tag combinations:
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
 |---|---|---|---|---|---|---|---|
+|SCONJ| Mood=Cnd | | наклонение: сослагательное | mood: conditional | | _чтобы_, _абы_ | cond |
+|SCONJ| _ | | нет помет | indeclinable | | | -- |
+
+|Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
+|---|---|---|---|---|---|---|---|
 |VERB| Aspect=Imp | ** | вид: несовершенный | aspect: imperfective | | | ipf |
 |VERB| Aspect=Perf | ** | вид: совершенный | aspect: perfective | | | pf |
 |VERB| Case=Acc | * | падеж: винительный | case: accusative | | | acc |
@@ -239,6 +245,7 @@ Tag combinations:
 |VERB| Gender=Masc | * | род: мужской | gender: masculine | | | m |
 |VERB| Gender=Neut | * | род: средний | gender: neutral | | | n |
 |AUX| Mood=Cnd | * | наклонение: сослагательное | mood: conditional | | _бы_, _б_ | cond |
+|AUX| Mood=Cnd2 | * | наклонение: сослагательное 2 | mood: conditional | | _бы_, _б_ | cond2 |
 |VERB| Mood=Imp | * | наклонение: повелительное | mood: imperative | | | imper |
 |VERB| Mood=Ind | * | наклонение: индикатив | mood: indicative | | | indic |
 |VERB| Number=Dual | * | число: двойственное | number: dual | | | 1p |
@@ -249,8 +256,8 @@ Tag combinations:
 |VERB| Person=3 | * | лицо: 3-е | person: 3rd | | | 3p |
 |VERB| Tense=Aor | * | время: будущее | tense: aorist | | | aor |
 |VERB| Tense=Fut | * | время: будущее | tense: future | | | fut |
-|AUX| Tense=Fut1 | * | время: будущее1 | tense: future 1st | | | fut1 |
-|AUX| Tense=Fut2 | * | время: будущее2 | tense: future 2nd | | | fut2 |
+|AUX| Tense=Fut1 | * | время: будущее 1 | tense: future 1st | | | fut1 |
+|AUX| Tense=Fut2 | * | время: будущее 2 | tense: future 2nd | | | fut2 |
 |VERB| Tense=Imp | * | время: имперфект | tense: imperfect | | | iperf, imperf |
 |VERB| Tense=Past | * | время: прошедшее | tense: past | | | praet,past |
 |AUX| Tense=Pqp | * | время: плюсквамперфект | tense: pluperfect | | | pqperf |
@@ -290,7 +297,6 @@ AUX - see VERB
 |CCONJ| _ | | нет помет | indeclinable | | | -- |
 |INTJ| _ | | нет помет | indeclinable | | | -- |
 |PART| _ | | нет помет | indeclinable | | | -- |
-|SCONJ| _ | | нет помет | indeclinable | | | -- |
 |PUNCT| _ | | нет помет | indeclinable | | | -- |
 |SYM| _ | | нет помет | indeclinable | | | -- |
 |X| _ | | нет помет | indeclinable | | | -- |
