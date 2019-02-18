@@ -18,7 +18,7 @@ The conversion table between RNC and UD tags is provided here: [MidRussianUD.md]
 
 ### Analytical forms  
 
-The analytical forms are annotated as two (or more) tokens cross-linked at the morphological (cf. OldRus) and syntactic (UD) level. All tokens are labeled `analyt` (UD: Analyt=Yes), the grammatical features are labeled on the token in which the category is expressed:  
+The analytical forms are annotated as two (or more) tokens cross-linked at the morphological (cf. OldRus) and syntactic (UD) level. All tokens are tagged `analyt` (UD: `Analyt=Yes`), the grammatical features are labeled on the token in which the category is expressed:  
 
 (1)
 \[RNC-MidRus\]
@@ -38,6 +38,33 @@ The analytical forms are annotated as two (or more) tokens cross-linked at the m
                         Transit=Tran|VerbForm=PartRes|Voice=Act                         0 root
 ```
 
-In example (1), number and person is labeled on the auxiliary _будет_, and gender, number is labeled on the content verb _дошла_. The content verb is also labeled as `perf` (UD: Tense=Past, VerbForm=PartRes) whereas the auxiliary is labeled by the tense of the whole analytical form `fut2` (UD: Tense=Fut2). Furthermore, _будет_ is labeled as `AUX` (part of speech) and `aux` (dependency relation) in UD.
+In example (1), number and person is labeled on the auxiliary _будет_, and gender, number is labeled on the content verb _дошла_. The content verb is also tagged `perf` (UD: `Tense=Past`, `VerbForm=PartRes`) whereas the auxiliary is labeled by the tense of the whole analytical form `fut2` (UD: `Tense=Fut2`). Furthermore, _будет_ is tagged `AUX` (part of speech) and `aux` (dependency relation) in UD.
 
+
+### Parts of speech  
+
+The following section lists some known mismatches in the annotation practice of RNC and UD.
+
+* _и_, _е_, _я_ are tagged `SPRO` (UD: `PRON`), the same way as in OldRus. 
+* _иже_, _еже_, _яже_ are tagged `SPRO` in RNC and `PRON` in UD. (There is some incosistency in OldRus in this respect, but they are mostly tagged `APRO` there).  
+* _который_ is tagged `APRO` in RNC and `PRON` in UD. The reason is that it has the morphological properties of an adjective and the syntactic properties of a noun (nominal head).  
+* the possessives _его_, _ея_, _ee_, _ихъ_, etc. are tagged as the Genitive forms of _онъ_, _оно_, _она_, _онѣ_: `PRON`, `Case=Gen`  
+
+* the list of `APRO` (UD: `DET`) includes:
+  * interrogative, relative, negative adjectival pronouns, quantifiers: _каковый_, _никакий_, _вьсь_   
+  * deictic (demonstrative) words: _сей_, _овъ_, _таковый_, etc.  
+  * possessive adjectival pronouns: _мой_, _свой_, etc.  
+
+* the predicative words (RNC: `PRAEDIC`) include the following categories:  
+  * _-о_, _-е/ѣ_ forms that have corresponding adjectives: (_ночью_) _тяпло_, _пригоже_, _явно_, etc. -- tagged as the short neutral forms of adjectives: `ADJ`, `Gender=Neut`, `Number=Sing`, `Variant=Short` in UD.  
+  * modal words: _можно_, _льзѣ_, _уне_ -- tagged as `VERB` in UD.  
+  * _нѣтъ_, _нѣ_ -- tagged as `VERB` in UD.  
+  * nouns such as _пора_ use predicatively (cf. _пора идти_) -- tagged as `S` in RNC and `NOUN` in UD.  
+  * interjections, onomatopoeic words used predicatively  -- tagged as `INTJ`.   
+  
+
+#### Mismatches between RNC and UD
+
+In general, the list of RNC can be mapped to the UD list almost straightforwardly, see the conversion table. `A`, `ANUM`, and the most part of `PRAEDIC` are mapped to `ADJ` (adjectives); `ADV`, `ADVPRO`, and `PARENTH` are mapped to `ADV` (adverb). `V` is splitted into `VERB` and `AUX` (where `AUX` labels the auxiliary use of _быти_, _имѣти_, _хотѣти_). `CONJ` is splitted into `CCONJ` (coordinate conjunction) and `SCONJ` (subordinate conjunction). `NONLEX` is splitted into `X` (foreign words, unknown words) and `SYM` (symbols). Besides that, punctuation marks are explicitly tagged `PUNCT` in UD.   
+In the intermediate schema (UD-X), an extended list of parts of speech is used which includes `ANUM`, `PRAEDIC`, `PARENTH`.
 
