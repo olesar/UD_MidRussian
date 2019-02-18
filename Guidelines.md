@@ -37,7 +37,7 @@ The analytical forms are annotated as two (or more) tokens cross-linked at the m
 4 дошла   доити	VERB	_ Analyt=Yes|Aspect=Perf|Gender=Fem|Number=Sing|Tense=Past|
                         Transit=Tran|VerbForm=PartRes|Voice=Act                         0 root
 ```
-
+  {And what to do about users trying to find such constuction via БЫТИ Tense=Pres + VerbForm=PartRes?}
 In example (1), number and person is labeled on the auxiliary _будет_, and gender, number is labeled on the content verb _дошла_. The content verb is also tagged `perf` (UD: `Tense=Past`, `VerbForm=PartRes`) whereas the auxiliary is labeled by the tense of the whole analytical form `fut2` (UD: `Tense=Fut2`). Furthermore, _будет_ is tagged `AUX` (part of speech) and `aux` (dependency relation) in UD.
 
 
@@ -61,7 +61,7 @@ The following section lists some known mismatches in the annotation practice of 
 * the numeral _один_ is tagged `ANUM` in RNC and `NUM` in UD. The reason to tag it `ANUM` is that it has an adjective-like paradigm and is used as an attribute (in Nominative case, it does not govern the Genitive case of the noun phrase as other numerals, see Zaliznjak 2003). However, the tag `NUM` is applied consitently to its lexical equivalents throughout the UD treebanks. In OldRus, the tag `NUM` is used as well.
 
 * the predicative words (RNC: `PRAEDIC`) include the following categories:  
-  * _-о_, _-е/ѣ_ forms that have corresponding adjectives: (_ночью_) _тяпло_, _пригоже_, _явно_, etc. -- tagged as the short neutral forms of adjectives: `ADJ`, `Gender=Neut`, `Number=Sing`, `Variant=Short` in UD.  
+  * _-о_, _-е/ѣ_ forms that have corresponding adjectives: (_ночью_) _тяпло_, _пригоже_, _явно_, etc. -- tagged as the short neutral forms of adjectives: `ADJ`, `Gender=Neut`, `Number=Sing`, `Variant=Short` in UD. {I suppouse, that they are more likely ADVs: -о, -е, -ѣ are normal ADV suffixes} 
   * modal words: _можно_, _льзѣ_, _надобно_, _уне_ -- tagged as `VERB` in UD.  
   * _нѣтъ_, _нѣ_ -- tagged as `VERB` in UD.  
   * nouns such as _пора_ use predicatively (cf. _пора идти_) -- tagged as `S` in RNC and `NOUN` in UD.  
