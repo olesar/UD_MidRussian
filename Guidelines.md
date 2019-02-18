@@ -154,6 +154,4 @@ Except for Variant/Strength and Animacy, these features are lexical (classifying
 Obviously, extended and optional features are out of the simplified list as well.  
 
 The tense forms of aorist (`Tense=Aor`) and imperfect (`Tense=Imp`) are relabeled as `Tense=Past` (the same way as in UD-PROIEL/TOROT).
-{Not sure I'm understanding :(((}
-
 
