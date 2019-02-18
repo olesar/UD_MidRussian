@@ -153,6 +153,7 @@ In order to make inventories of UD Church Slavic (UD-PROIEL) and UD-MidRus compa
 Except for Variant/Strength and Animacy, these features are lexical (classifying) and do not add to the identification of which paradigm cell the form fills. 
 Obviously, extended and optional features are out of the simplified list as well.  
 
-The tense forms of aorist (`Tense=Aor`) and imperfect (`Tense=Imp`) is relabeled as `Tense=Past` (the same way as in UD-PROIEL/TOROT).  
+The tense forms of aorist (`Tense=Aor`) and imperfect (`Tense=Imp`) are relabeled as `Tense=Past` (the same way as in UD-PROIEL/TOROT).
+{Not sure I'm understanding :(((}
 
 
