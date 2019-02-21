@@ -37,7 +37,7 @@ The analytical forms are annotated as two (or more) tokens cross-linked at the m
 4 дошла   доити	VERB	_ Analyt=Yes|Aspect=Perf|Gender=Fem|Number=Sing|Tense=Past|
                         Transit=Tran|VerbForm=PartRes|Voice=Act                         0 root
 ```
-  {And what to do about users trying to find such constuction via БЫТИ Tense=Pres + VerbForm=PartRes?}
+ 
 In example (1), number and person is labeled on the auxiliary _будет_, and gender, number is labeled on the content verb _дошла_. The content verb is also tagged `perf` (UD: `Tense=Past`, `VerbForm=PartRes`) whereas the auxiliary is labeled by the tense of the whole analytical form `fut2` (UD: `Tense=Fut2`). Furthermore, _будет_ is tagged `AUX` (part of speech) and `aux` (dependency relation) in UD.
 
 
