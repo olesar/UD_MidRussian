@@ -149,7 +149,7 @@ The following tags of OldRus can be defined only in a particular context, often 
 * `as_PRO` (used as pronoun)  -- not tagged in RNC-MidRus and UD.   
 * `as_ART` (used as article) -- not applicable in RNC-MidRus
 
-The following tags can be used optionally and only in the RNC-style annotation.  
+The following tags are used optionally and only in the RNC-style annotation.  
 * `in_persn`: (_анастасу_) _корсунѧнину_  
 * `in_ethn`: _чернии клобѹци_  
 * `in_topn`: _костѧни градѣ_  
@@ -158,7 +158,7 @@ The following tags can be used optionally and only in the RNC-style annotation.
 * `in_CONJ`: _єгда како_  
 * `in_PR`: _в мѣсто_  
 
-* `husbn`: (_ѹ_) _тѹдоровѣи_, distinguishes the name given by husband's name from patronymics in the Birchbark Letters corpus.  
+`husbn`: (_ѹ_) _тѹдоровѣи_, distinguishes the name given by husband's name from patronymics in the Birchbark Letters corpus.  
 
 Old nicknames are not considered last names and are tagged `as_persn` (UD: `NounType=Persn`): _Мономахъ_.
 
@@ -169,16 +169,19 @@ Old nicknames are not considered last names and are tagged `as_persn` (UD: `Noun
 * `anom` (not tagged in UD) -- used to tag grammatically anomalous forms. However, what is considered 'grammatically anomalous' in the historical data is controversial and theory-specific. So, this tag should be used with caution.   
 * `oov` (cf. `bastard` in ModernRus, not tagged in UD) -- used to tag words not seen in the training data or the grammatical dictionary of the tagger.  
 * `abbr` (UD: `Abbr=Yes`) -- used to tag abbreviated words including those marked by titlo (◌҃).  
-* `ciph` (UD: `NumForm=Digit`) -- used to tag cardinal and ordinal numerals expressed by (Euro-Arabic) digits and Cyrillic letters   
+* `ciph` -- used to tag cardinal and ordinal numerals expressed by (Euro-Arabic) digits and Cyrillic letters.
+  * In UD-MidRus, `NumForm=Digit` is used to tag cardinal and ordinal numerals expressed by (Euro-Arabic) digits (_за 5 верстъ_, _5-ти дней_, _лета 7030-го июля в 9 день_);
+  * `NumForm=Cyril` is used to tag numerals expressed by Cyrillic letters (_КЕ ал_, _по Д чысло_);
+  * `NumForm=Word` is used to tag numerals expressed by words (_одинъ_, _первый_, _лѣта семь тысячь девятаго_).
 
 
 ### Extended annotation schema 
 
-We introduce the notion of extended features (or x-features) that are added into annotation to meet the needs of micro-diachronic studies in which the data of the modern language are compared against the historical data. Even if a certain grammatical category is under development and it is not evident if it is present or absent in the data, x-features allows one to look for the potentially interesting patterns. In the current Middle Russian standard, the x-features include:  
+We introduce the notion of extended features (or x-features) that are added into annotation to make the annotation in different corpora comparable, with particular focus on micro-diachronic studies in which the data of the modern language are compared against the historical data. Even if a certain grammatical category is under development and it is not evident if it is present or absent in the data, x-features allows one to look for the potentially interesting patterns. In the current Middle Russian standard, the x-features include:  
 
 * `anim$` and `inan$` (UD: `Animacy[lex]=Anim`, `Animacy[lex]=Inan`): classifying features that correspond to `anim` and `inan` in the ModernRus annotation. This category is not to be mixed with `anim` (UD: `Animacy=Anim`) that is applicable only to the Accusative constructions (see [above]()). There are cases in which the lexically animated nouns (`anim$`) are not tagged as `anim`.  
 
-* In UD-MidRus, `persn`, `patrn`, `famn`, `zoon`, `ethn`, `topon` are considered extended features and tagged under the category `NounType` (e.g. `NounType=Ethn`).  
+* `persn`, `patrn`, `famn`, `zoon`, `ethn`, `topon` are considered extended features in UD-MidRus and tagged under the category `NounType` (e.g. `NounType=Ethn`).  
 
 
 ### Simplified annotation schema  
