@@ -165,7 +165,11 @@ Old nicknames are not considered last names and are tagged `as_persn` (UD: `Noun
 
 #### Spelling and grammatical variants
 
-* `distort` (UD: `Typo=Yes`) -- used to tag distorted words and guessed words. In addition, there is a tag [`Echo`](https://universaldependencies.org/u/feat/Echo.html) in UD used for various repetitions.
+* `distort` (UD: `Typo=Yes`) -- used to tag distorted words and guessed words. Specific cases (RNC-style only):
+  * `damaged` -- guessed words (if the text segment is damaged)
+  * `crossed_out` -- crossed out (OR: _и ко <s>полотьску</s>_)
+  * `redundant` -- redundant word (OR: ..._сѧ и_ ... (_разъгнѣва_) _сѧ_)
+  * NB In UD, there is a tag [`Echo`](https://universaldependencies.org/u/feat/Echo.html) used for various repetitions.
 * `anom` (not tagged in UD) -- used to tag grammatically anomalous forms. However, what is considered 'grammatically anomalous' in the historical data is controversial and theory-specific. So, this tag should be used with caution.   
 * `oov` (cf. `bastard` in ModernRus, not tagged in UD) -- used to tag words not seen in the training data or the grammatical dictionary of the tagger.  
 * `abbr` (UD: `Abbr=Yes`) -- used to tag abbreviated words including those marked by titlo (◌҃).  
