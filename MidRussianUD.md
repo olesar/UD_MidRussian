@@ -57,7 +57,7 @@ Status:
 
 Tag combinations:
 * Case Degree Gender Number Variant -- default  
-  * Case Degree Number Variant -- + plural oblique  
+  * Case Degree Number Variant -- + plural (dual, if any) oblique, long forms  
   * Animacy Case Degree Gender Number Variant -- + Accusative in which Acc=Gen  
     * Animacy Case Degree Number Variant -- + plural Accusative  
 * Degree -- indeclinable comparative form  
@@ -304,7 +304,7 @@ AUX - see VERB
 
 ### Additional features
 * Abbr=Yes  
-* Analyt=  
+* Analyt=Yes  
 * ...Type=
 * Other=
 
