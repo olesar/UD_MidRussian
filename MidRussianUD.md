@@ -43,7 +43,7 @@ Status:
 |ADJ| Case=Loc | * | падеж: предложный | case: locative| | | loc |
 |ADJ| Case=Nom | * | падеж: именительный | case: nominative | | | nom |
 |ADJ| Degree=Cmp | ** | степень: сравнительная | degree: comparative | | | comp |
-|ADJ| Degree=Cmp2 | ** | степень: 2-я сравнительная | degree: comparative | | | comp2 |
+|ADJ| Degree=Cmp2 | ** | степень: сравнительная с приставкой _по-_ | degree: comparative with the prefix _po-_ | | | comp2 |
 |ADJ| Degree=Pos | ** | степень: положительная | degree: positive | | | -- |
 |ADJ| Gender=Fem | * | род: женский | gender: feminine | | | f |
 |ADJ| Gender=Masc | * | род: мужской | gender: masculine | | | m |
@@ -61,10 +61,6 @@ Tag combinations:
   * Animacy Case Degree Gender Number Variant -- + Accusative in which Acc=Gen  
     * Animacy Case Degree Number Variant -- + plural Accusative  
 * Degree -- indeclinable comparative form  
-* Case Degree Gender Number -- possessives?, oblique forms w/o long/short constrast?  
-  * Case Degree Number -- + plural oblique  
-  * Animacy Case Degree Gender Number -- + Accusative in which Acc=Gen  
-     * Animacy Case Degree Number -- + plural Accusative   
 * Case Gender Number Variant -- ordinal numerals  
   * Case Number Variant -- + plural oblique  
   * Animacy Case Gender Number -- + Accusative in which Acc=Gen  
@@ -79,7 +75,7 @@ NB Degree=Comp is also labeled on lexical comparatives such as _лутшии_.
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
 |---|---|---|---|---|---|---|---|
 |ADV| Degree=Cmp | ** | степень: сравнительная | degree: comparative | | | comp |
-|ADV| Degree=Cmp2 | ** | степень: 2-я сравнительная | degree: comparative | | | comp2 |
+|ADV| Degree=Cmp2 | ** | степень: сравнительная с приставкой _по-_ | degree: comparative with the prefix _po-_ | | | comp2 |
 |ADV| Degree=Pos | ** | степень: положительная | degree: positive | | | (posit) |
 |ADV| _ | ** | -- | (pronominal adverbs) | | | -- |
 
@@ -165,7 +161,7 @@ Tag combinations:
 * Case Gender -- small numbers (_дву_, _обѣ_)  
 * _ -- digit-based numerals  
 NB _два_ can be labeled with Number=Dual (cf. _въ дву посаду_).
-NB in UD standard, одинъ is cosidered a numeral and is labeled with Number. In RNC standard, it is considered ANUM (i.e. ADJ).
+NB in UD standard, одинъ is considered a numeral and is labeled with Number. In RNC standard, it is considered ANUM (i.e. ADJ).
 
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
