@@ -34,8 +34,7 @@ Status:
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
 |---|---|---|---|---|---|---|---|
-|ADJ| Animacy=Anim | * | одушевленность | animate (Acc=Gen) | | | acc |
-|ADJ| Animacy=Inan | * | неодушевленность | inanimate (Acc=Nom) | | | dat |
+|ADJ| Animacy=Anim | * | одушевленность | animate (Acc=Gen) | | | anim |
 |ADJ| Case=Acc | * | падеж: винительный | case: accusative | | | acc |
 |ADJ| Case=Dat | * | падеж: дательный | case: dative | | | dat |
 |ADJ| Case=Gen | * | падеж: родительный | case: genitive | | | gen |
@@ -86,8 +85,7 @@ Tag combinations:
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
 |---|---|---|---|---|---|---|---|
-|DET| Animacy=Anim | * | одушевленность | animate (Acc=Gen) | | | acc |
-|DET| Animacy=Inan | * | неодушевленность | inanimate (Acc=Nom) | | | dat |
+|DET| Animacy=Anim | * | одушевленность | animate (Acc=Gen) | | | anim |
 |DET| Case=Acc | * | падеж: винительный | case: accusative | | | acc |
 |DET| Case=Dat | * | падеж: дательный | case: dative | | | dat |
 |DET| Case=Gen | * | падеж: родительный | case: genitive | | | gen |
