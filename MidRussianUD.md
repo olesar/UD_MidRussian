@@ -286,9 +286,9 @@ Tag combinations:
 * Aspect Gender Number Tense VerbForm -- l-forms (labeled as Tense=Past, VerbForm=PartRes)   
 * Aspect Case Gender Number Strength Tense VerbForm Voice - participles  
   * Aspect Case Number Strength Tense VerbForm Voice - plural participles  
-* + Reflex - reflexive verbs
-* + Animacy (in Accusative participles where Acc=Gen)
-* - Aspect - _быти_
+* \+ Reflex - reflexive verbs
+* \+ Animacy (in Accusative participles where Acc=Gen)
+* \- Aspect - _быти_
 * Mood Number Person Tense VerbForm -- _нѣтъ_ (only present indicative)
 
 NB Transitivity is marked in the RNC standard: Transit=Tran, Transit=Intr
