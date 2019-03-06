@@ -143,6 +143,7 @@ Tag combinations:
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
 |---|---|---|---|---|---|---|---|
+|NUM| Animacy=Anim | | одушевленный | animate | | | anim(NB) |
 |NUM| Case=Acc | | падеж: винительный | case: accusative | | | acc |
 |NUM| Case=Dat | | падеж: дательный | case: dative | | | dat |
 |NUM| Case=Gen | | падеж: родительный | case: genitive | | | gen |
@@ -152,14 +153,14 @@ Tag combinations:
 |NUM| Gender=Fem | ** | род: женский | gender: feminine | | | f |
 |NUM| Gender=Masc | ** | род: мужской | gender: masculine | | | m |
 |NUM| Gender=Neut | ** | род: средний | gender: neutral | | | n |
-|ADJ| _ | ** | нет помет | no tags | | _и_ | -- |
+|NUM| _ | ** | нет помет | no tags | | _и_ | -- |
 
 Tag combinations:
 * Case -- default  
 * Case Gender -- small numbers (_дву_, _обѣ_)  
 * _ -- digit-based numerals  
 NB _два_ can be labeled with Number=Dual (cf. _въ дву посаду_).
-NB in UD standard, одинъ is considered a numeral and is labeled with Number. In RNC standard, it is considered ANUM (i.e. ADJ).
+NB in UD standard, одинъ is considered a numeral and is labeled with Number (and Animacy, if relevant). In RNC standard, it is considered ANUM (i.e. ADJ).
 
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
@@ -185,6 +186,13 @@ NB in UD standard, одинъ is considered a numeral and is labeled with Number
 |PRON| Person=1 | * | лицо: 1-е | person: 1st | | | 1p |
 |PRON| Person=2 | * | лицо: 2-е | person: 2nd | | | 2p |
 |PRON| Person=3 | * | лицо: 3-е | person: 3rd | | | 3p |
+|PRON| PronType=Dem | * | неопределенное | indefinite | | нѣкто | -- |
+|PRON| PronType=Ind | * | неопределенное | indefinite | | некто | -- |
+|PRON| PronType=Int | * | вопросительное | interrogative | | кто | -- |
+|PRON| PronType=Neg | * | отрицательное | negative | | никто | -- |
+|PRON| PronType=Prs | * | личное | personal | | вы | -- |
+|PRON| PronType=Rel | * | относительное | relative | | который | -- |
+|PRON| PronType=Tot | * | кванторное | quantifying | | весь | -- |
 |PRON| Reflex=Yes | * | возвратное | reflexive | | | 3p |
 |PRON| _ | ** | нет помет | indeclinable | | | -- |
 
