@@ -257,6 +257,7 @@ Tag combinations:
 |VERB| Person=1 | * | лицо: 1-е | person: 1st | | | 1p |
 |VERB| Person=2 | * | лицо: 2-е | person: 2nd | | | 2p |
 |VERB| Person=3 | * | лицо: 3-е | person: 3rd | | | 3p |
+|VERB| Reflex=Yes | * | возвратность | reflexifity | | | refl |
 |VERB| Tense=Aor | * | время: будущее | tense: aorist | | | aor |
 |VERB| Tense=Fut | * | время: будущее | tense: future | | | fut |
 |AUX| Tense=Fut1 | * | время: будущее 1 | tense: future 1st | | | fut1 |
@@ -274,22 +275,23 @@ Tag combinations:
 |VERB| VerbForm=PartRes | | л-форма | l-form | | | perf |
 |VERB| VerbForm=Sup | | супин | supine | | | sup |
 |VERB| Voice=Act | * | залог: активный | voice: active | | | act |
-|VERB| Voice=Mid | | залог: средний | voice: middle (reflexive verbs) | | | med |
-|VERB| Voice=Pass |  | залог: пассивный | voice: passive | | | pass |
-|VERB| _ | ** | нет помет | indeclinable _нѣтъ_ | | | -- | 
+|VERB| [Voice=Mid](NB) | | залог: средний | voice: middle (reflexive verbs) | | | med |
+|VERB| Voice=Pass | * | залог: пассивный | voice: passive | | | pass |
 |AUX| _ | ** | нет помет | indeclinable _си_, _ся_ | | | -- | 
 
 Tag combinations:
-* Aspect VerbForm Voice -- infinitive  
-* Aspect Tense VerbForm Voice -- converb  
-* Aspect Mood Number Person Tense VerbForm Voice -- personal forms in indicative  
-* Aspect Gender Mood Number Tense VerbForm Voice -- l-forms (labeled as Tense=Past, VerbForm=PartRes)   
+* Aspect VerbForm -- infinitive  
+* Aspect Tense VerbForm -- converb  
+* Aspect Mood Number Person Tense VerbForm -- personal forms in indicative  
+* Aspect Gender Number Tense VerbForm -- l-forms (labeled as Tense=Past, VerbForm=PartRes)   
 * Aspect Case Gender Number Strength Tense VerbForm Voice - participles  
   * Aspect Case Number Strength Tense VerbForm Voice - plural participles  
 * + Animacy (in Accusative participles where Acc=Gen)
-* _ -- _нѣтъ_ (indeclinable)
+* Mood Number Person Tense VerbForm -- _нѣтъ_ (indeclinable)
 
 NB Transitivity is marked in the RNC standard: Transit=Tran, Transit=Intr
+
+NB Voice=Mid is included in the Modern Russian tagset. In the Middle Russian, this tag is substituted with Reflex=Yes  
 
 AUX - see VERB
 
