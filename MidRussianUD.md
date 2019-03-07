@@ -56,19 +56,17 @@ Status:
 
 Tag combinations:
 * Case Degree Gender Number Variant -- default  
-  * Case Degree Number Variant -- + plural (dual, if any) oblique, long forms  
   * Animacy Case Degree Gender Number Variant -- + Accusative in which Acc=Gen  
-    * Animacy Case Degree Number Variant -- + plural Accusative  
 * Degree -- indeclinable comparative form  
 * Case Gender Number Variant -- ordinal numerals  
-  * Case Number Variant -- + plural oblique  
   * Animacy Case Gender Number -- + Accusative in which Acc=Gen  
-     * Animacy Case Number -- + plural Accusative   
-* Degree Gender Number Variant -- short predicative adjectives  
-  * Degree Number Variant -- + plural oblique  
 * _ -- digit-based ordinal numerals, indeclinable adjectives  
 
 NB Degree=Comp is also labeled on lexical comparatives such as _лутшии_. 
+
+NB The predicative words are tagged as Case=Nom,Degree=Pos,Gender=Neut,Number=Sing,Variant=Short. 
+
+NB Animacy (Acc=Gen) is tagged as a case (`accgen`) in the Old Russian corpus.   
 
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
@@ -104,17 +102,11 @@ Tag combinations:
 
 Tag combinations:
 * Case Gender Number -- default (_сам_)  
-  * Case Number -- + plural oblique (_всѣми_)  
   * Animacy Case Gender Number -- + Accusative in which Acc=Gen (_которого_)  
-     * Animacy Case Number -- + plural Accusative (_всѣх_)   
 * Case Gender Number Poss -- possessive (_мой_)  
-  * Case Number Poss -- + plural oblique (_своими_)  
   * Animacy Case Gender Number Poss -- + Accusative in which Acc=Gen (_своего_)  
-     * Animacy Case Number Poss -- + plural Accusative (_своих_)   
-* Case Gender Number Variant -- determiners with contrast between long and short forms?  
-  * Case Number Variant -- + plural oblique  
+* Case Gender Number Variant -- determiners with contrast between long and short forms (_всякий_)  
   * Animacy Case Gender Number -- + Accusative in which Acc=Gen  
-     * Animacy Case Number -- + plural Accusative  
      
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
@@ -177,6 +169,7 @@ NB in UD standard, одинъ is considered a numeral and is labeled with Number
 |PRON| Case=Ins | | падеж: творительный | case: instrumental | | | ins |
 |PRON| Case=Loc | | падеж: предложный | case: locative| | | loc |
 |PRON| Case=Nom | | падеж: именительный | case: nominative | | | nom |
+|PRON| Clitic=Yes | * | клитическая (безударная) форма | clitic | | ми | cl |
 |PRON| Gender=Fem | * | род: женский | gender: feminine | | | f |
 |PRON| Gender=Masc | * | род: мужской | gender: masculine | | | m |
 |PRON| Gender=Neut | * | род: средний | gender: neutral | | | n |
@@ -198,12 +191,12 @@ NB in UD standard, одинъ is considered a numeral and is labeled with Number
 
 Tag combinations:
 * Case Number Person -- personal pronouns  
+  * Case Clitic Number Person -- clitic forms of the personal pronouns
 * Case Gender Number Person -- 3rd person pronouns  
 * Case -- _кто_, _что_, _кождо_  
 * Case Gender Number -- _се_, _всем_  
 * Case Number -- _все_ (plural)
 * Case Reflex -- _себѣ_ 
-
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
 |---|---|---|---|---|---|---|---|
@@ -232,6 +225,7 @@ Tag combinations:
 |---|---|---|---|---|---|---|---|
 |SCONJ| Mood=Cnd | | наклонение: сослагательное | mood: conditional | | _чтобы_, _абы_ | cond |
 |SCONJ| _ | | нет помет | indeclinable | | | -- |
+
 
 |Cat|Feat|Status|Description (ru)|Description (en)|Freq|Examples|RNC|
 |---|---|---|---|---|---|---|---|
@@ -284,8 +278,7 @@ Tag combinations:
 * Aspect Tense VerbForm -- converb  
 * Aspect Mood Number Person Tense VerbForm -- personal forms in indicative  
 * Aspect Gender Number Tense VerbForm -- l-forms (labeled as Tense=Past, VerbForm=PartRes)   
-* Aspect Case Gender Number Strength Tense VerbForm Voice - participles  
-  * Aspect Case Number Strength Tense VerbForm Voice - plural participles  
+* Aspect Case Gender Number Tense Variant VerbForm Voice - participles  
 * \+ Reflex - reflexive verbs
 * \+ Animacy (in Accusative participles where Acc=Gen)
 * \- Aspect - _быти_
