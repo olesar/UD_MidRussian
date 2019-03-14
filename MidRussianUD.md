@@ -179,7 +179,7 @@ NB in UD standard, одинъ is considered a numeral and is labeled with Number
 |PRON| Person=1 | * | лицо: 1-е | person: 1st | | | 1p |
 |PRON| Person=2 | * | лицо: 2-е | person: 2nd | | | 2p |
 |PRON| Person=3 | * | лицо: 3-е | person: 3rd | | | 3p |
-|PRON| PronType=Dem | * | неопределенное | indefinite | | нѣкто | -- |
+|PRON| PronType=Dem | * | указательное | demonstrative | | нѣкто | -- |
 |PRON| PronType=Ind | * | неопределенное | indefinite | | некто | -- |
 |PRON| PronType=Int | * | вопросительное | interrogative | | кто | -- |
 |PRON| PronType=Neg | * | отрицательное | negative | | никто | -- |
