@@ -18,7 +18,7 @@ We distinguish among the core annotation schema (RNC and UD), the extended schem
 
 ### Part of speech tags and core grammatical tags
 
-The lists of pos tags and core grammatical (inflectional) tags is available here: [MidRussianUD.md](https://github.com/olesar/UD_MidRussian/MidRussianUD.md). The document also report the mapping between the RNC and UD tags.  
+The lists of pos tags and core grammatical (inflectional) tags is available here: [MidRussianUD.md](https://github.com/olesar/UD_MidRussian/blob/master/MidRussianUD.md). The document also reports the mapping between the RNC and UD tags.  
 
 
 ### Parts of speech  
